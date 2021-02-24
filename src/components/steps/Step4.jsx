@@ -6,7 +6,6 @@ const Step4 = () => {
       <h1>Success!</h1>
 
       <p>Job's done.</p>
-
     </div>
   );
 }

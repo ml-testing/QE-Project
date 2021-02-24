@@ -14,16 +14,7 @@ const Step2 = ({ onSubmit }) => {
 
         <FormInput id='lastName' label='Last name' ref={register({ required: true })} errors={errors} />
 
-        {/* <div className='mb-3'>
-          <label for='firstName' className='form-label'>First name</label>
-          <input type='text' className='form-control' id='firstName' />
-        </div>
-        <div className='mb-3'>
-          <label for='lastName' className='form-label'>Last name</label>
-          <input type='text' className='form-control' id='lastName' />
-        </div> */}
-
-        <button type='submit' className='btn btn-primary'>Next</button>
+        <button type='submit' className='btn btn-primary' data-test-id='submit'>Next</button>
 
       </form>
     </div>

@@ -20,13 +20,15 @@ Once running, the application should be accessible at http://localhost:3000/
 In a separate folder, create a simple automation framework in your language of choice, and a couple test cases that can be run against the application locally along with a short Readme on how to install/run the tests
 
 Here are some things we will be looking for in your solution:
-- Ease of setup/install
-- Tests run and pass
 - Overall structure (Ideally Page-object model)
+- Ability to support future features
 - Readability/Simplicity of code
+- Ease of setup/install
 - Use of html/css selectors
-- Use of assertions
+- Use of assertions/expectations
+- Tests run and pass
 
 Bonus points for:
-- Using Webdriver.io (or any JS based framework)
+- Using [WebdriverIO](https://webdriver.io/)
+- Using JavaScript
 - Good code comments!

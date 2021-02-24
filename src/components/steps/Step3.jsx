@@ -16,12 +16,12 @@ const Step3 = ({ form, onSubmit, isPosting }) => {
 
       <form onSubmit={onSubmit}>
         {isPosting ?
-          <button type='button' className='btn btn-primary' disabled>
+          <button type='button' className='btn btn-primary' data-test-id='submit' disabled>
             <div class="spinner-border" role="status">
               <span class="visually-hidden">Loading...</span>
             </div>
           </button> :
-          <button type='submit' className='btn btn-primary'>Submit</button>
+          <button type='submit' className='btn btn-primary' data-test-id='submit'>Submit</button>
         }
       </form>
 

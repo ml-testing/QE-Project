@@ -13,11 +13,16 @@ const errorMessage = (error) => {
 }
 
 const FormInput = React.forwardRef(({ id, label, errors, type = 'text' }, ref) => {
-  console.log(errors);
   return (
     <div className='mb-3'>
       <label htmlFor={id} className='form-label'>{label}</label>
-      <input type={type} className={errors[id] ? 'form-control is-invalid' : 'form-control'} id={id} name={id} ref={ref} />
+      <input
+        type={type}
+        className={errors[id] ? 'form-control is-invalid' : 'form-control'}
+        id={id}
+        name={id}
+        data-test-id={`input-${id}`}
+        ref={ref} />
       {errors[id] && <div className='invalid-feedback'>{errorMessage(errors[id])}</div>}
     </div>
   );

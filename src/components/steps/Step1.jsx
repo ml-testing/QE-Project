@@ -14,7 +14,7 @@ const Step1 = ({ onSubmit }) => {
 
         <FormInput id='password' label='Password' type='password' ref={register({ required: true })} errors={errors} />
 
-        <button type='submit' className='btn btn-primary'>Next</button>
+        <button type='submit' className='btn btn-primary' data-test-id='submit'>Next</button>
 
       </form>
     </div>
