@@ -9,4 +9,4 @@ go to https://chromedriver.chromium.org/downloads and download the version that 
 pytest test_login_page.py
 
 You should get the following when the tests completed
-2 passed in 1<number> seconds
+2 passed in <number> seconds
