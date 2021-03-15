@@ -16,7 +16,6 @@ class TestLoginPage:
         self.driver.get(self.url)
         self.loginpage = login(self.driver)
         step1 = self.loginpage.get_test()
-        # step1 = self.driver.find_element_by_tag_name('h1').text
         assert step1 == "Step 1"
         self.driver.close()
 
